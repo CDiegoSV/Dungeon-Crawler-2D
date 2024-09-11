@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Dante.FSM
+namespace Dante.DungeonCrawler
 {
     public class ControllerInputHandler : MonoBehaviour
     {
         #region Runtime Variables
         protected PlayerInput _playerInput;
-        protected Avatar[] _allAvatars;
-        protected Avatar _avatar;
+        protected PlayersAvatar[] _allAvatars;
+        protected PlayersAvatar _avatar;
         #endregion
         #region Unity Methods
 
         void Start()
         {
             _playerInput = GetComponent<PlayerInput>();
-            _allAvatars = GameObject.FindObjectsOfType<Avatar>(true);
-            foreach (Avatar avatar in _allAvatars)
+            _allAvatars = GameObject.FindObjectsOfType<PlayersAvatar>(true);
+            foreach (PlayersAvatar avatar in _allAvatars)
             {
                 if ((int)avatar.playerIndex == _playerInput.playerIndex)
                 {

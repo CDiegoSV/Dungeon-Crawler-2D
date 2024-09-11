@@ -12,9 +12,7 @@ namespace Dante.DungeonCrawler
 
     #endregion
 
-
-    [RequireComponent(typeof(Rigidbody2D))]
-    public class Agent : MonoBehaviour
+    public class EnemyNPC : Agent
     {
         #region Knobs
 
@@ -22,7 +20,7 @@ namespace Dante.DungeonCrawler
         #endregion
 
         #region References
-        protected Rigidbody2D _rigidbody2D;
+
         #endregion
 
         #region RuntimeVariables
@@ -31,10 +29,7 @@ namespace Dante.DungeonCrawler
 
         #region LocalMethods
 
-        protected virtual void InitializeAgent()
-        {
-            _rigidbody2D = GetComponent<Rigidbody2D>();
-        }
+
 
         #endregion
 
@@ -42,17 +37,12 @@ namespace Dante.DungeonCrawler
 
         void Start()
         {
-             InitializeAgent();
+
         }
 
         void Update()
         {
 
-        }
-
-        private void FixedUpdate()
-        {
-            //_rigidbody2D.velocity = Vector3.right;  
         }
 
         #endregion

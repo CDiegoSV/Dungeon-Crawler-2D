@@ -5,7 +5,18 @@ using UnityEngine;
 namespace Dante.DungeonCrawler
 {
     #region Enums
-
+    public enum States { 
+        //IDLE
+        IDLE_DOWN, 
+        IDLE_UP, 
+        IDLE_RIGHT, 
+        IDLE_LEFT,
+        //MOVING
+        MOVING_DOWN,
+        MOVING_UP,
+        MOVING_RIGHT,
+        MOVING_LEFT,
+    }
     #endregion
 
     #region Structs
@@ -14,7 +25,7 @@ namespace Dante.DungeonCrawler
 
 
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Agent : MonoBehaviour
+    public class FiniteStateMachine : MonoBehaviour
     {
         #region Knobs
 
@@ -22,18 +33,19 @@ namespace Dante.DungeonCrawler
         #endregion
 
         #region References
-        protected Rigidbody2D _rigidbody2D;
         #endregion
 
         #region RuntimeVariables
 
+        protected States _state;
+        
         #endregion
 
         #region LocalMethods
 
-        protected virtual void InitializeAgent()
+        protected void InitializeFSM()
         {
-            _rigidbody2D = GetComponent<Rigidbody2D>();
+
         }
 
         #endregion
@@ -42,7 +54,7 @@ namespace Dante.DungeonCrawler
 
         void Start()
         {
-             InitializeAgent();
+             InitializeFSM();
         }
 
         void Update()
