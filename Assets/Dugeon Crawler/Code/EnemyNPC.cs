@@ -16,6 +16,7 @@ namespace Dante.DungeonCrawler
     {
         #region Knobs
 
+        public int maxHealthPoints;
 
         #endregion
 
