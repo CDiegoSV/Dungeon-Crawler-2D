@@ -201,67 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7fed5cdd00ffb4b8b959fc9db1dc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &347162303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 347162305}
-  - component: {fileID: 347162304}
-  m_Layer: 0
-  m_Name: StructTest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &347162304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347162303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44fe6870a6d23e42a839c6a210e2f96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  structExample:
-  - variableInt: 41
-    variableIntMana: 0
-    enumType: 0
-    name: 2
-  - variableInt: 0
-    variableIntMana: 0
-    enumType: 1
-    name: 
-  - variableInt: 25
-    variableIntMana: 0
-    enumType: 0
-    name: gjyf
-  - variableInt: 112
-    variableIntMana: 4
-    enumType: 0
-    name: dthd
---- !u!4 &347162305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347162303}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &452115084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,7 +1356,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 149075845568528944, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149075845568528944, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1454,6 +1393,10 @@ PrefabInstance:
     - target: {fileID: 149075845568528944, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679197960164963008, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
+      propertyPath: _rigidbody2D
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7162295586640743984, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
       propertyPath: m_Name
@@ -1628,4 +1571,3 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1356286727}
   - {fileID: 1243931852}
-  - {fileID: 347162305}

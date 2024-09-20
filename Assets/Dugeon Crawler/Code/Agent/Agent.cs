@@ -18,11 +18,16 @@ namespace Dante.DungeonCrawler
     {
         #region Knobs
 
+        [SerializeField]
+        protected int maxHealthPoints;
 
         #endregion
 
         #region References
+
+        [SerializeField, HideInInspector]
         protected Rigidbody2D _rigidbody2D;
+
         #endregion
 
         #region RuntimeVariables
@@ -31,10 +36,7 @@ namespace Dante.DungeonCrawler
 
         #region LocalMethods
 
-        protected virtual void InitializeAgent()
-        {
-            _rigidbody2D = GetComponent<Rigidbody2D>();
-        }
+        
 
         #endregion
 
@@ -42,7 +44,7 @@ namespace Dante.DungeonCrawler
 
         void Start()
         {
-             InitializeAgent();
+             //InitializeAgent();
         }
 
         void Update()
@@ -58,6 +60,15 @@ namespace Dante.DungeonCrawler
         #endregion
 
         #region PublicMethods
+
+        public virtual void InitializeAgent()
+        {
+            _rigidbody2D = GetComponent<Rigidbody2D>();
+            if (_rigidbody2D == null )
+            {
+                Debug.LogError("Rigidbody has not been assigned to " + gameObject.name);
+            }
+        }
 
         #endregion
 

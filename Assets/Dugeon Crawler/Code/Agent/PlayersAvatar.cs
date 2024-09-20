@@ -38,11 +38,7 @@ namespace Dante.DungeonCrawler
 
         #region LocalMethods
 
-        protected override void InitializeAgent()
-        {
-            base.InitializeAgent();
-            _movementInputVector = Vector2.zero;
-        }
+        
 
         #endregion
 
@@ -77,6 +73,12 @@ namespace Dante.DungeonCrawler
             {
                 _rigidbody2D.velocity = Vector2.zero;
             }
+        }
+
+        public override void InitializeAgent()
+        {
+            base.InitializeAgent();
+            _movementInputVector = Vector2.zero;
         }
 
         #endregion
