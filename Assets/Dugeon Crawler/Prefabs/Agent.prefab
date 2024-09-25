@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2758327649680080664}
   - component: {fileID: 4868165373179984734}
   - component: {fileID: 6521576917159675536}
+  - component: {fileID: 3903695096748322465}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealthPoints: 3
+  _rigidbody2D: {fileID: 0}
 --- !u!114 &8075418487980726168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa096ebd267f34941b8efe925c793956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 3903695096748322465}
 --- !u!212 &2758327649680080664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -185,3 +188,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &3903695096748322465
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162295586640743984}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e7bcf260e7c97046acc20ae29b64d0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

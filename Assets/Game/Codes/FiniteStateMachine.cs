@@ -17,6 +17,18 @@ namespace Dante.DungeonCrawler
         MOVING_RIGHT,
         MOVING_LEFT,
     }
+
+    public enum StateMechanics
+    {
+        //STOP
+        STOP,
+        //MOVE
+        MOVE_DOWN,
+        MOVE_UP,
+        MOVE_RIGHT,
+        MOVE_LEFT,
+    }
+
     #endregion
 
     #region Structs
@@ -34,7 +46,7 @@ namespace Dante.DungeonCrawler
 
         #region References
 
-
+        [SerializeField, HideInInspector] protected Animator _animator;
 
         #endregion
 
@@ -60,23 +72,21 @@ namespace Dante.DungeonCrawler
              InitializeFSM();
         }
 
-        void Update()
-        {
-
-        }
-
-        private void FixedUpdate()
-        {
-            //_rigidbody2D.velocity = Vector3.right;  
-        }
 
         #endregion
 
         #region PublicMethods
 
+        public void StateMechanic(StateMechanics value)
+        {
+            _animator.SetBool(value.ToString(), true);
+        }
+
         #endregion
 
         #region GettersSetters
+
+
 
         #endregion
 
