@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5d00d1981c85b4eba0997626e0242b, type: 3}
+  m_Name: SOT_2
+  m_EditorClassIdentifier: 
+  characterProperties:
+    name: afgrsa
+    maxHealth: 23
+    currentHealth: 12
+    spawnPosition: {x: -12.36, y: 11.08}
+    characterSprite: {fileID: 0}
+    prefabAgent: {fileID: 4925130521602153435, guid: 480ad063e5d40944ab9dbc1a312da967, type: 3}
