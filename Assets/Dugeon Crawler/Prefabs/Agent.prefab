@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealthPoints: 3
   _rigidbody2D: {fileID: 0}
+  _fsm: {fileID: 8075418487980726168}
 --- !u!114 &8075418487980726168
 MonoBehaviour:
   m_ObjectHideFlags: 0

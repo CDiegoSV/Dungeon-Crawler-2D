@@ -94,3 +94,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47084615426082b41925612e087561dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealthPoints: 10
+  _rigidbody2D: {fileID: 0}
+  _fsm: {fileID: 6281861404947415667}
+  playerIndex: 0
+--- !u!114 &6281861404947415667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8075418487980726168, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
+  m_PrefabInstance: {fileID: 2827136856894084587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925130521602153435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa096ebd267f34941b8efe925c793956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

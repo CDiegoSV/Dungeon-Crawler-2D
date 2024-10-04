@@ -28,6 +28,8 @@ namespace Dante.DungeonCrawler
         [SerializeField, HideInInspector]
         protected Rigidbody2D _rigidbody2D;
 
+        [SerializeField, HideInInspector] protected FiniteStateMachine _fsm;
+
         #endregion
 
         #region RuntimeVariables
@@ -63,11 +65,11 @@ namespace Dante.DungeonCrawler
 
         public virtual void InitializeAgent()
         {
-            _rigidbody2D = GetComponent<Rigidbody2D>();
-            if (_rigidbody2D == null )
-            {
-                Debug.LogError("Rigidbody has not been assigned to " + gameObject.name);
-            }
+            //_rigidbody2D = GetComponent<Rigidbody2D>();
+            //if (_rigidbody2D == null )
+            //{
+            //    Debug.LogError("Rigidbody has not been assigned to " + gameObject.name);
+            //}
         }
 
         #endregion

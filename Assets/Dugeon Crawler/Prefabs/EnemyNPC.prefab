@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7162295586640743984, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
       propertyPath: m_Name
-      value: EnemyNPC Variant
+      value: EnemyNPC
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6679197960164963008, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
@@ -77,6 +77,17 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 1449183663606085974}
   m_SourcePrefab: {fileID: 100100000, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
+--- !u!114 &7734509660846482606 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8075418487980726168, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
+  m_PrefabInstance: {fileID: 1965779296893170486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8656565243607235846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa096ebd267f34941b8efe925c793956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8656565243607235846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7162295586640743984, guid: 82109b18925cf7643bf3ce32d5f7c7ec, type: 3}
@@ -94,3 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7fed5cdd00ffb4b8b959fc9db1dc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealthPoints: 3
+  _rigidbody2D: {fileID: 0}
+  _fsm: {fileID: 7734509660846482606}
+  scriptBehaviours: {fileID: 11400000, guid: 318ed5a6e470b334f921c9d3457d1a12, type: 2}
